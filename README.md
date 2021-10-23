@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: https://thaiscode.github.io/order-summary-component-main/
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-with-html-and-css-Tt0iE5oYw
+- Live Site URL: https://thaiscode.github.io/huddle-landing-page/
 
 ## My process
 
