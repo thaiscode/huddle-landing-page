@@ -8,7 +8,7 @@ svg {
 }
 body {
     width: 1440px;
-    height: 100vh;
+    min-height: 100vh;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     background: url(images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
@@ -36,17 +36,20 @@ button {
     border-radius: 70px;
     border: none;
     box-shadow: 1px 1px 10px black;
+    transition: all 0.2s;
 }
 
 button:hover {
     background: hsl(300, 69%, 71%);
     color: #fff;
     cursor: pointer;
+    
 }
 
 a {
     text-decoration: none;
     padding-left: 5px;
+    transition: all 0.2s;
 }
 
 i {
@@ -117,6 +120,7 @@ i:hover {
 
 .attribution a { 
     color: #fff; 
+    transition: all 0.2s;
 }
 
 .attribution a:hover {
@@ -127,9 +131,8 @@ i:hover {
 
 	body {
         background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
-        background-size: 100%;
 		width: 375px;
-	    height: 100vh;
+	    min-height: 100vh;
         margin: auto;
     }
 
@@ -182,12 +185,23 @@ i:hover {
 
 }
 
+@media screen and (min-width: 425px) {
+
+	body {
+        background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
+        background-size: cover;
+		width: 425px;
+	    min-height: 100vh;
+        margin: auto;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1365px){
 	body {
         background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
-        background-size: 100%;
+        background-size: cover;
         width: 768px;
-		height: 100vh;
+		min-height: 100vh;
     }
 
     .principal {
@@ -237,7 +251,7 @@ i:hover {
 @media screen and (min-width: 1024px) and (max-width: 1365px){
 	body {
         width: 1024px;
-		height: 100vh;
+		min-height: 100vh;
     }
 
     .principal-text h1 {
@@ -257,7 +271,7 @@ i:hover {
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
 	body {
 		width: 1366px;
-		height: 100vh;
+		min-height: 100vh;
 	}
 }
 
@@ -265,14 +279,14 @@ i:hover {
     
     body {
 		width: 1440px;
-		height: 900px;
+		min-height: 900px;
 	}
 }
 
 @media screen and (min-width: 1920px) {
 	body {
 		width: 1920px;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	
 }
